@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+     crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+       crossorigin="anonymous"></script>
+    <style>
+        .color-cont{
+            border: 2px solid blue;
+        }
+        .color-cont1{
+            border: 2px solid green;
+            margin: 10px;
+        }
+        .parentrow{
+            background-color: yellow
+        }
+        .child-1{
+            background-color: aqua;
+        }
+        .child-2{
+            background-color: darkgoldenrod;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>BOOTSTRAP</h3>
+    <li>bootstrap is developer are develop the all style is inside the bootstrap in pre-defind.</li>
+    <br>
+    <button>Button</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <br>
+      <br>
+      <h4>containers normal</h4>
+      <li>always will be center and size veried of different page</li>
+      <br>
+      <div class="container color-cont">
+        this container will be in center
+      </div>
+      <br>
+      <h4>container fluid</h4>
+      <li>this is fluid-container is taking for entire width.this is not varied to size different page</li>
+      <br>
+      <div class="container-fluid color-cont1">
+        <div class="row parentrow">
+            <div class="col-1 child-1">1</div>
+            <div class="col-2 child-2">2</div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <h3>BOOTSTRAP-GRID</h3>
+      <li>bootstrap grid is a user see the viewport.thw viewport is 12 diveded parts of inside the 
+        user seeing viewport.
+      </li>
+      <br>
+      <!-- <div class="row parentrow1">
+        <div class="col-3 child-3">3</div>
+        <div class="col-3 child-4">4</div>
+        <div class="col-3 child-5">5</div>
+        <div class="col-3 child-6">6</div>
+      </div> -->
+      <br>
+      <li>large screen and medium screen</li>
+      <!-- <div class="row parentrow1">
+            <div class="col-3 col-lg-3 col-md-6 child-3">3</div>
+            <div class="col-3 col-lg-3 col-md-6 child-4">4</div>
+            <div class="col-3 col-lg-3 col-md-6 child-3">5</div>
+            <div class="col-3 col-lg-3 col-md-6 child-4">6</div>
+      </div> -->
+      <br>
+      <li>small screen</li>
+      <!-- <div class="row parentrow1">
+        <div class="col-3 col-lg-3 col-md-6 col-sm-12 child-3">3</div>
+        <div class="col-3 col-lg-3 col-md-6 col-sm-12 child-4">4</div>
+        <div class="col-3 col-lg-3 col-md-6 col-sm-12 child-3">5</div>
+        <div class="col-3 col-lg-3 col-md-6 col-sm-12 child-4">6</div>
+      </div> -->
+      <br>
+      <li>nested grid container</li>
+      
+      <br>
+      <br>
+      <br>
+</body>
+</html>

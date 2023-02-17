@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>DOM</h3>
+<li>dom==>document object model</li>
+<ul>whole htl page are inside the document</ul>
+<ul>dom is representation of website</ul>
+<ul>dom contains lot of methode to intract with the website</ul>
+<ul>dom is cover the entire body of html</ul>
+<br>
+<h4>methods of dom</h4>
+<b>data fetching methods</b>
+<p>
+    <b>we called the tag name this way</b>
+   <ol>
+        <li>getElementBytagName</li>
+            <ul>
+                <li>document.getElementByTagName('tag name')</li>
+                <li>output will be in html collections of giving a array format</li>
+                <li>we cannot use parent,child tag names</li>
+            </ul>
+        <li>getElementByclassName</li>
+            <ul>
+                <li>we give the name of the class name is inside the 
+                    getElementByclassName('class name')
+                </li>
+                <li>we cannot use the parent.child class names</li>
+                <li>output will be in html collections of giving a array format</li>
+            </ul>
+        <li>getElementByid</li>
+            <ul>
+                <li>getElementByid</li>
+                <li>output will be first occured unique element</li>
+                <li>document.getElementById('Id')</li>
+                <li>we can use the index to specific data</li>
+                <li>we cannot use parent,child relation</li>
+            </ul>
+        <li>queryselector</li>
+            <ul>
+                <li>we can perform parent and child relation</li>
+                <li>output will be in giving for first occured unique element</li>
+                <li>it's similar to css stylings</li>
+                <li>we can use tag,class,id names to fetch data</li>
+                <li>document.querySelector('tag,class,id')</li>
+            </ul>
+        <li>queryselectorAll</li> 
+            <ul>
+                <li>we can use parent and child relation</li>
+                <li>it will fetch all occurance in array</li>
+                <li>it's similar to css stylings</li>
+                <li>we can use tag,class,id names to fetch data</li>
+                <li>document.querySelectorAll('tag,class,id')</li>
+                <li>we can use the index to specific data</li>
+                <li>output will be giving a nodelist</li>
+            </ul>
+   </ol>
+</p>
+<br>
+<br>
+<h3>dom ==> data reading</h3>
+<ul>when we use these are three mathods.first we get the exact element in html then use these methods.
+    <li>innerText</li>
+        <ul>the text data from data between open tag & close tag will be comming as output</ul>
+        <ul>document.querySelector('---').innerText</ul>
+    <li>textContent</li>
+        <ul>the text data from data between open tag & close tag will be comming as output</ul>
+        <ul>it can read even if this element is hidden</ul>
+        <ul>document.querySelector('---').textContent</ul>
+    <li>inner HTML</li>
+        <ul>it will consider all data from the tags and for give this inner HTML.</ul>
+        <li>document.querySelector('---').textHTML</li>
+</ul>
+<br>
+<h4>data writting</h4>
+<ul>innerText
+    <li>we writte the text in data.it will change</li>
+    <li>whatever the data that user gives it is going to be considered</li>
+    <li>document.querySelector('.card-body .card-title').innerText = 'sakthi'</li>
+</ul>
+<ul>textContent
+    <li>we writte the text in data.it will change</li>
+    <li>whatever the data that user gives it is going to be considered</li>
+    <li>document.querySelector('.card-body .card-title').innerContent = 'sakthi'</li>
+</ul>
+<ul>innerHTML
+    <li>it will give text.we writte the text it will only consider for particular word.</li>
+    <li>whatever we give the data it act user specification automatically.</li>
+</ul>
+</body>
+</html>
+ 

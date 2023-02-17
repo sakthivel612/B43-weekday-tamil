@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns: 300px 300px;
+            grid-template-columns: 30% 70%;
+        }
+        div{
+            border: 2px solid red;
+            margin: 5px;
+        }
+        .grid-item{
+            display: grid;
+            grid-template-columns: 30% 30% auto;
+        }
+        .col-2{
+            grid-column: 2/4;
+        }
+        .col-4{
+            grid-row: 2/4;
+        }
+        .grid-item-area{
+            display: grid;
+            grid-template-areas: "name1 name1 name3"
+             "name4 name5 name5"
+             "name4 name8 name9";
+        }
+        .colarea-1{
+            grid-area: name1;
+        }
+        .colarea-5{
+            grid-area: name5;
+        }
+        .colarea-4{
+            grid-area: name4;
+        }
+    </style>
+</head>
+<body>
+    <h2>GRID</h2>
+    <li>grid is use to create a multiple containers are inside the grid</li>
+    <li>display:grid ==> we call the this type of grid.because this the way to calling grid to consider</li>
+    <br>
+    <li>grid-type</li>
+        <ul>
+            <li>display:grid</li>
+            <li>grid-template-column</li>
+            <li>grid-column</li>
+            <li>grid-row</li>
+            <li>grid-template-areas</li>
+        </ul>
+    <br>
+    <div class="parent">
+        <div>one</div>
+        <div>two</div>
+    </div>
+    <br>
+    <div class="grid-item">
+        <div class="column">1</div>
+        <div class="column col-2">2</div>
+        <!-- <div class="column">3</div> -->
+        <div class="column col-4">4</div>
+        <div class="column">5</div>
+        <div class="column">6</div>
+        <!-- <div class="column">7</div> -->
+        <div class="column">8</div>
+        <div class="column">9</div>
+    </div>
+    <br>
+    <h4>MERGE COLUMN</h4>
+    <li>we merge the 2 column.this merging method we use the grid-column.the merge method was pointing the column is 
+        starting point.</li>
+    <br>
+    <div class="grid-item-area">
+        <div class="column colarea-1">1</div>
+        <!-- <div class="column colarea-2">2</div> -->
+        <div class="column colarea-3">3</div>
+        <div class="column colarea-4">4</div>
+        <div class="column colarea-5">5</div>
+        <!-- <div class="column colarea-6">6</div> -->
+        <!-- <div class="column colarea-7">7</div> -->
+        <div class="column colarea-8">8</div>
+        <div class="column colarea-9">9</div>
+    </div>
+</body>
+</html>

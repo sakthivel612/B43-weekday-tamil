@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h2{
+            color:red;
+        }
+        h4{
+            color:blueviolet;
+        } */
+         div ul li{
+            color:rgb(255, 127, 206);
+        }
+        [type="submit"]{
+            color:rgb(255, 0, 221);
+        }
+        h3{
+            color:red
+        }
+        div label ul li{
+            color: red;
+        }
+        p{
+            color: orange;
+        }
+        label ul li{
+            color: chartreuse;
+        }
+        span ol li{
+            color:blueviolet
+        }
+        th{
+            border: 2px solid red;
+        }
+        td{
+            border: 2px solid gold;
+        }
+        h1{
+            color: orangered;
+        }
+        #Sakthivel{
+            color: blueviolet;
+        }
+        .Sakthivel{
+            color:crimson
+        }
+        a[href*=google]{
+            color:rgb(255, 0, 0);
+        }
+        a[href^=ourl]{
+            color: green;
+        }
+        a[href$=html]{
+            color:orange
+        }
+        .border{
+            border: 4px solid blueviolet;
+            text-align: center;
+            direction: ltr;
+        }
+         .supereme a{
+            text-decoration-line:underline;
+            text-decoration-color: red;
+            text-decoration-thickness: 2px;
+            text-transform: uppercase;
+        }
+         a:visited{
+            color: blue;
+        }
+        section{
+            border: 2px solid goldenrod;
+            padding: 5px;
+        }
+         /* div{
+            border: 2px solid blue;
+            padding: 45px;
+            margin: 30px 20px 10px  40px; 
+        } */
+         a:visited{
+            color: rgb(4, 0, 238);
+        }
+        a:link{
+            color:rgb(223, 4, 4)
+        }
+        a:hover{
+            color: yellow;
+        }
+        a:active{
+            color:blueviolet
+        }
+        .parent1{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(56, 216, 64);
+            /* position: relative; to viweport, normal to point where it was creaded */
+        }
+        .child-1,.child-2,.child-3{
+            height: 50px;
+            width: 50px;
+        }
+        .child-1{
+           background-color: rgb(87, 1, 168);
+           /* position: fixed; /* we give this fixed condition its going to top the viewport */
+           /* top: 10px; */
+        }
+        .child-2{
+            background-color: rgb(223, 226, 43);
+            /* position: relative; */ /* to viweport, normal to point where it was creaded */
+            /* position: absolute; /*normal to with the related to parent/*
+            top: 10px; */
+            /* left: 10px; */
+            /* border-radius: 50px;  it use to we reduce the radius corner points of border*/ 
+        }
+        .child-3{
+            background-color: rgb(243, 36, 0);
+            /* position: sticky; it will use to movie the child container top to bottom inside of parent container 
+            top: 50px; */
+        }
+        .parent2{
+             /* display:flex; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* align-items: center; */
+            /* flex-wrap: wrap; */
+            width: 500px;
+            height: 300px;
+            background-color: rgb(56, 216, 64);
+        }
+        .child-1,.child-2,.child-3,.child-4,.child-5,.child-6{
+            height: 50px;
+            width: 50px;
+        }
+        .parent3{
+            display: flex;
+        }
+        .user{
+            flex:0.5;
+        }
+        .password{
+            flex: 1;
+        }
+        .gradient{
+            width: 400px;
+            height: 400px;
+            /* background-image: linear-gradient(to right,orange,rgb(248, 248, 248),rgb(22, 180, 1)); */
+            /* background-image: radial-gradient(red,white,black,rgb(199, 62, 165),blue,orange,green,blueviolet) */
+            /* background-image: conic-gradient(red 100deg,white 100deg,black 300deg); */
+            background-image: repeating-radial-gradient(black 5px,white 20px);
+        }
+        .drop-down ul{
+            display:none; 
+        }
+        .drop-down:hover ul{
+            display: block;
+        }
+        .drop-down,.drop-down p{
+            display: inline-block;
+        }
+        /* .parent1{
+            background-color: blueviolet;
+            z-index: -3;
+            position: relative;
+        }
+        .child-1{
+            background-color: red;
+            position: relative;
+            top: 30px;
+            z-index: -2;
+        }
+        .child-2{
+            background-color: rgb(0, 251, 255);
+            position: relative;
+            top: 20px;
+            z-index: -1;
+        }
+        .child-3{
+            background-color: rgb(26, 255, 0);
+            z-index: 1;
+        }  */
+        .overflow{
+            /* overflow: visible; */
+            /* overflow: hidden; */
+            overflow: scroll;
+            border: 2px solid blueviolet;
+            height: 150px;
+            width: 150px;
+            overflow: auto;
+            overflow: clip;
+        }
+        /* @media screen {
+            body{
+                background-color: yellow;
+            }
+        }
+        @media screen and (min-width:800px) {
+            body{
+                background-color: rgb(0, 255, 76);
+            }
+        }
+        @media screen and (max-width:720px){
+            body{
+                background-color: aqua;
+            }
+        }
+        @media screen (min-width:400px) and (max-width:800px) {
+            
+        } */
+    </style>
+</head>
+<body>
+    <h2>HTML ==> hyper text markup language</h2>
+    <h4>html ==> Skeleton of website</h4>
+        <ul style="color:blue;">html is not consider to spaces.html is ignore the white spaces</ul>
+        <a href="https://www.guvi.com" target="_blank">guvi websit</a>
+    <label>guvi.com is a domain name</label>
+    <h4>TAGS</h4>
+    <h5>block level elements tags.</h5>
+        <div>
+            <ul>
+                <li>h1 => h7. this h1-h7 tags are heading tag.</li>
+                <li>p => paragraph tag.</li>
+                <li>ul => unordered list tag. its create a list but this list format is unordered type.</li>
+                <li>ol => order list tag. its create a list in number order-vise.</li>
+                <li>table => this tag use to stored the data is inside the table.</li>
+            </ul>
+        </div>
+    <br>
+    <div>
+        <label><b>All head tags</b>
+            <ul>
+                <li><h1>Heading</h1></li>
+                <li><h2>Heading</h2></li>
+                <li><h3>Heading</h3></li>
+                <li><h4>Heading</h4></li>
+                <li><h5>Heading</h5></li>
+                <li><h6>Heading</h6></li>
+            </ul>
+        </label>
+    </div>
+    <h3>paragraph</h3>
+    <p>Brihadishvara Temple, called Rajarajesvaram by its builder,
+     and known locally as <mark>
+     Thanjai Periya Kovil</mark> and Peruvudaiyar Kovil,
+      is a Shaivite Hindu temple built in a Chola architectural style located
+     on the south bank of the Cauvery river in Thanjavur, Tamil Nadu, India
+    </p>
+    <label><b>un ordered list</b>
+        <ul>NAMES
+            <li>sakthivel</li>
+            <li>mathaven</li>
+            <li>vijay</li>
+        </ul>
+    </label>
+    <span><b>oder list</b>
+        <ol>Qualification
+            <li>Msc.,Computer science</li>
+            <li>MBA</li>
+            <li>12 stanterd</li>
+        </ol>
+    </span>
+    <table>
+        <tr>
+            <th>Roll Num</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Qualification</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Sakthivel</td>
+            <td>22</td>
+            <td>Msc,.cs</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mathaven</td>
+            <td>20</td>
+            <td>MBA</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Vijay</td>
+            <td>16</td>
+            <td>12 std</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th>Roll Num</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Qualification</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Sakthivel</td>
+            <td rowspan="2">22</td>
+            <td>Msc,.cs</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mathaven</td>
+            <!--<td>20</td>-->
+            <td>MBA</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Vijay</td>
+            <td colspan="2">16</td>
+            <!--<td>12 std</td>-->
+        </tr>
+    </table>
+    <h4>TAGS</h4>
+    <h5>inline level elements tags.</h5>
+    <div>
+            <label style="color:brown;">
+            <ol>
+                <li>label => this tag use to only the size of elements.</li>
+                <li>img => this tag use set the images url in html.and this is a self close tag.</li>
+                <li>b => bold tag.inside of the words are convert to bold letters.</li>
+                <li>a => a tag is anchor tag.its use to redirect the page and default its get underline format.</li>
+                <li>input => this tag is use to create a user name tag.</li>
+                <li>span => it is react to size base inline level and it is inline container</li>
+            </ol>
+        </label>
+    </div>
+    <b><h1>GOKU</h1></b>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBPo9PbCcw-
+    r-jHNrPFNN17TflpBa7_yBnaVlSh0vUs0MFKS-R6kJTmdsV_Db1eZgz2QU&usqp=CAU" alt="">
+    <hr>
+    <h4>ATTRIBUTE</h4>
+    <button type="submit">submit</button> <label>=> it is react redirect to url page </label>
+    <label for=""style="color:red;">first Name</label>
+    <input type="text" placeholder="first Name"></input>
+    <br>
+    <br>
+    <h2>CSS ==> Casecading Style Sheet</h2>
+    <label>ID</label>
+    <h3 id="Sakthivel">This is a my name. Sakthivel</h3>
+    <label>CLASS</label>
+    <h4 class="Sakthivel">I am learning HTML & CSS</h4>
+    <br>
+    <br>
+    <label style="color: cornflowerblue;"><b>check contains the value of attribute</b></label>
+    <h5>Using * method to check the word inside the tag and changing the attribute color</h5>
+    <a href="https://www.google.com/">GOOGLE</a>
+    <br>
+    <h5>Using ^ method to check a word start to which inside tags.</h5>
+    <a href="ourlocal.ttml">LOCAL</a>
+    <br>
+    <h5>Using $ method to check a word end to which inside tags.</h5>
+    <a href="localfile.html">HTML</a>
+    <br>
+    <h3>BORDER</h3>
+    <li>It used to create a border line to box</li>
+    <div class="border">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+    </div>
+    <br>
+    <br>
+    <h3>DISPLAY</h3>
+    <ul>it will not show to the user.but data will present
+        <li>the display is to use the change the inline to block. and block to inline. this display 
+        usage is hidden the line</li>
+        <li>remove the line to use display</li>
+    </ul>
+    <ul class="supereme">
+        <a>
+            <li>one</li>
+            <li>two</li> 
+            <li>three</li>
+            <li>four</li> 
+        </a>
+    </ul>
+    <hr>
+    <h4 style="color: orange;">PSUEDO</h4>
+    <li>visited</li>
+        <a href="https://www.wikipedia.org/">WIKIPEDIA</a>
+    <li>link</li>
+    <li>hover</li>
+    <li>active</li>
+    <br>
+    <h4 style="color: blue;">box-model</h4>
+    <li>1.padding</li>
+    <li>2.margin</li>
+    <li>3.border</li>
+    <br>
+    <br>
+    <ol><b style="color: green;">padding</b> 
+        <li>content & boder this two between one gap created.that is border</li>
+    </ol>
+    <br>
+        <section>
+            Brihadishvara Temple, called Rajarajesvaram by its builder,
+        and known locally as Thanjai Periya Kovil and Peruvudaiyar Kovil,
+        is a Shaivite Hindu temple built in a Chola architectural style located
+        on the south bank of the Cauvery river in Thanjavur, Tamil Nadu, India
+        </section>
+    <br>
+    <ol><b style="color:blueviolet;">margin</b>
+        <li>margin is use to increase the gap into container to border</li>
+    </ol>
+        <div>
+        Brihadishvara Temple, called Rajarajesvaram by its builder,
+        and known locally as Thanjai Periya Kovil and Peruvudaiyar Kovil,
+        is a Shaivite Hindu temple built in a Chola architectural style located
+        on the south bank of the Cauvery river in Thanjavur, Tamil Nadu, India
+    </div>
+    <br>
+    <br>
+    <h4>position</h4>
+    <div class="parent1">
+        <div class="child-1"></div>
+        <div class="child-2"></div>
+        <div class="child-3"></div>
+    </div>
+    <ul>
+        <li>position-relative ==> to viweport, normal to point where it was creaded</li>
+        <li>position-absolute ==> normal to with the related to parent</li>
+        <li>position=fixed ==> we give this fixed condition its going to top the viewport </li>
+        <li>position-sticky</li>
+        <li> border-radius ==> it use to we reduce the radius corner points of border</li>
+    </ul>
+    <li>we have to use position to parent of the container - top-right-bottom-left</li>
+    <br>
+    <h2>FLEX-BOX</h2>
+    <div class="parent2">
+        <div style="background-color: rgb(87, 1, 168);" class="child-1"></div>
+        <div style="background-color: rgb(223, 226, 43);"class="child-2"></div>
+        <div style="background-color: rgba(0, 36, 243, 0.966);"class="child-3"></div>
+        <div style="background-color:rgb(255, 0, 221);" class="child-4"></div>
+        <div style="background-color:rgb(240, 146, 5);" class="child-5"></div>
+        <div style="background-color:rgb(0, 217, 255);" class="child-6"></div>
+        <!-- <div style="background-color: rgb(87, 1, 168);" class="child-1"></div>
+        <div style="background-color: rgb(223, 226, 43);"class="child-2"></div>
+        <div style="background-color: rgba(0, 36, 243, 0.966);"class="child-3"></div>
+        <div style="background-color:rgb(255, 0, 221);" class="child-4"></div>
+        <div style="background-color:rgb(240, 146, 5);" class="child-5"></div>
+        <div style="background-color:rgb(0, 217, 255);" class="child-6"></div>
+        <div style="background-color: rgb(87, 1, 168);" class="child-1"></div>
+        <div style="background-color: rgb(223, 226, 43);"class="child-2"></div>
+        <div style="background-color: rgba(0, 36, 243, 0.966);"class="child-3"></div>
+        <div style="background-color:rgb(255, 0, 221);" class="child-4"></div>
+        <div style="background-color:rgb(240, 146, 5);" class="child-5"></div>
+        <div style="background-color:rgb(0, 217, 255);" class="child-6"></div>
+        <div style="background-color: rgb(87, 1, 168);" class="child-1"></div>
+        <div style="background-color: rgb(223, 226, 43);"class="child-2"></div>
+        <div style="background-color: rgba(0, 36, 243, 0.966);"class="child-3"></div>
+        <div style="background-color:rgb(255, 0, 221);" class="child-4"></div>
+        <div style="background-color:rgb(240, 146, 5);" class="child-5"></div>
+        <div style="background-color:rgb(0, 217, 255);" class="child-6"></div>
+        <div style="background-color: rgb(87, 1, 168);" class="child-1"></div>
+        <div style="background-color: rgb(223, 226, 43);"class="child-2"></div>
+        <div style="background-color: rgba(0, 36, 243, 0.966);"class="child-3"></div>
+        <div style="background-color:rgb(255, 0, 221);" class="child-4"></div>
+        <div style="background-color:rgb(240, 146, 5);" class="child-5"></div>
+        <div style="background-color:rgb(0, 217, 255);" class="child-6"></div> -->
+       
+    </div>
+    <br>
+    <li>to position the container inside the parent elament dynamically</li>
+    <br>
+    <h3>flex-box styles</h3>
+    <ul><b>display-flex</b></ul>
+        <li>it will use align the data are row-vise</li>
+    <ul><b>justify-content:center</b></ul>
+        <li>whole data will be center of the position of parent container</li>
+    <ul><b>justify-content:space-between</b></ul>
+        <li>it will change space for equaly distribute to container</li>
+    <ul><b>justify-content:space-arround</b></ul>
+        <li>it will give space start to end data's for arround</li>
+    <ul><b>justify-content:space-even</b></ul>
+        <li>it will give a space for evenly the data to parent</li>
+    <ul><b>align-items:center</b></ul>
+        <li>verticaly change the data, and it will use for change the data column formate to parent </li>
+    <ul><b>flex-wrap:wrap</b></ul>
+        <li>we create the multiple data in inside container.its check the data free or not.if data's are
+            not free it will do the free for al data parent container.</li>
+    <br>
+    <br>
+    <div class="parent3">
+    <div class="user">NAME</div>
+    <div class="password">xx123456789xx</div>
+    </div>
+    <br>
+    <h3>GRADIENT</h3>
+    <ul><b>1.it will use to background image, color changing.</b></ul>
+    <ul><b>2.it use to major of usage is color changing</b></ul>
+        <li>linear ==> use to change background-image colors</li>
+        <li>Radial ==> it will use to change background-image color % percentage</li>
+        <li>conic ==> it will use change the color section vise</li>
+    <br>
+    <div class="gradient"></div>    
+    <br>
+    <hr>
+    <h3>DROP-DOWN</h3>
+    <div class="drop-down">
+        <p>to show drop-down</p>
+            <ul>
+                <li>one</li>
+                <li>two</li>
+                <li>three</li>
+            </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Z-INDEX</h3>
+    <li>to use the z-index we have to use position to parent</li>
+    <li>greater the z-index higher the container will be</li>
+    <br>
+    <div class="parent1">
+        <div class="child-1"></div>
+        <div class="child-2"></div>
+        <div class="child-3"></div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>OVER FLOW</h3>
+    <li>visible ==> data will visible for user</li>
+    <li>hidden ==> data will be hiddin for container</li>
+    <li>scroll ==> it use for scroll the data inside of container</li>
+    <li>auto ==> auto increase, automatically scroll the data</li>
+    <li>clip ==> similar to hidden</li>
+    <br>
+    <br>
+    <div class="overflow">
+        <p>
+            Brihadishvara Temple, called Rajarajesvaram by its builder,
+            and known locally as Thanjai Periya Kovil and Peruvudaiyar Kovil,
+            is a Shaivite Hindu temple built in a Chola architectural style located
+            on the south bank of the Cauvery river in Thanjavur, Tamil Nadu, India
+        </p>
+    </div>
+    <br>
+    <br>
+    <h3>MEDIA QUERY</h3>
+    <li>media query is user visiblity and user change the device the page are increase
+        ,decrese for using media query, and font ,page design also increase and decrese.
+    </li>
+</body>
+</html>
+
+
+
+
+
+
+
